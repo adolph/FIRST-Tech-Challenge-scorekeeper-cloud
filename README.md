@@ -21,7 +21,8 @@ sudo apt-get install xvfb libxrender1 libxtst6 libxi6
 6. Run scorekeeper
 
 ```bash
-FTCLive\ INTO\ THE\ DEEP\ 2025/;
+tar xzf FTCLive\ INTO\ THE\ DEEP\ 2025-6.4.2-linux_amd64.tar.gz 
+cd FTCLive\ INTO\ THE\ DEEP\ 2025/;
 ./FTCLive\ INTO\ THE\ DEEP\ 2025 
 ```
 
