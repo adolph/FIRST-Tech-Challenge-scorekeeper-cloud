@@ -17,11 +17,14 @@ This document describes how to run the [FTC scorekeeper](https://github.com/FIRS
 sudo apt-get install xvfb libxrender1 libxtst6 libxi6
 ```
 
-5. Download and extract scorekeeper
+5. Download and extract scorekeeper, [example file](download.sh)
 6. Run scorekeeper
 
 ```bash
-tar xzf FTCLive\ INTO\ THE\ DEEP\ 2025-6.4.2-linux_amd64.tar.gz 
+file="FTCLive INTO THE DEEP 2025-6.4.2-linux_amd64.tar.gz";
+url="https://ftc-scoring.firstinspires.org/local/download/GQLTEUGH/linux_amd64";
+curl -L "${url}" -o "${file}";
+tar xzf FTCLive\ INTO\ THE\ DEEP\ 2025-6.4.2-linux_amd64.tar.gz;
 cd FTCLive\ INTO\ THE\ DEEP\ 2025/;
 ./FTCLive\ INTO\ THE\ DEEP\ 2025 
 ```
@@ -34,7 +37,7 @@ cp FTCLive\ INTO\ THE\ DEEP\ 2025 headless-FTCLive\ INTO\ THE\ DEEP\ 2025
 vim headless-FTCLive\ INTO\ THE\ DEEP\ 2025 
 ```
 
-9. Change the second to last line to use xvfb-run, see the [example file](headless-FTCLive INTO THE DEEP 2025.sh)
+9. Change the second to last line to use xvfb-run, see the [example file](headless-FTCLive\ INTO\ THE\ DEEP\ 2025.sh)
 
 ```
 xvfb-run -a -e "${SCRIPTPATH}/xvfb-run.log" "${JAVA}" ${JVMDefaultOptions} -jar "${JVMClassPath}" $@
