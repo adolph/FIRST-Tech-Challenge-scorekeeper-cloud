@@ -1,0 +1,28 @@
+{
+  "allowed": [
+    {
+      "IPProtocol": "tcp",
+      "ports": [
+        "8080"
+      ]
+    }
+  ],
+  "creationTimestamp": "2025-01-13T18:25:20.685-08:00",
+  "description": "Allows for 8080 for FTC scorekeeper app",
+  "direction": "INGRESS",
+  "disabled": false,
+  "enableLogging": true,
+  "id": "2057476306406766079",
+  "kind": "compute#firewall",
+  "logConfig": {
+    "metadata": "INCLUDE_ALL_METADATA",
+    "enable": true
+  },
+  "name": "ftc-scorekeeper-app",
+  "network": "projects/ftc-scorekeeper/global/networks/default",
+  "priority": 0,
+  "selfLink": "projects/ftc-scorekeeper/global/firewalls/ftc-scorekeeper-app",
+  "sourceRanges": [
+    "0.0.0.0/0"
+  ]
+}
