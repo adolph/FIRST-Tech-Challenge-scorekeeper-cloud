@@ -37,7 +37,7 @@ cp FTCLive\ INTO\ THE\ DEEP\ 2025 headless-FTCLive\ INTO\ THE\ DEEP\ 2025
 vim headless-FTCLive\ INTO\ THE\ DEEP\ 2025 
 ```
 
-9. Change the second to last line to use xvfb-run, see the [example file](headless-FTCLive\ INTO\ THE\ DEEP\ 2025.sh)
+9. Change the second to last line to use xvfb-run, see the [example file](headless-FTCLive%20INTO%20THE%20DEEP%202025.sh)
 
 ```
 xvfb-run -a -e "${SCRIPTPATH}/xvfb-run.log" "${JAVA}" ${JVMDefaultOptions} -jar "${JVMClassPath}" $@
